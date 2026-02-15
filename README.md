@@ -24,7 +24,11 @@ Implements a white-box FGSM-based attack on numeric features using quantile clip
 Tests simple defenses, including inference-time clipping and FGSM-based adversarial training, and re-evaluates model robustness on clean and attacked data.
 
 The repository does not include any MIMIC-III v1.4 data. Access requires separate approval via PhysioNet and paths in the notebooks assume that the user has already downloaded and locally prepared the database by extracting the zipped CSVs.
-The unzipped CSVs are to be stored in a folder whose path is the value for the “base_dir” parameter. By default it is set to the following:
+
+The MIMIC-III database is available here: https://physionet.org/content/mimiciii/1.4/
+
+The unzipped CSVs are to be stored in a folder whose path is the value for the “base_dir” parameter. 
+By default it is set to the following:
 base_dir = r"D:\Path\to\the\directory\where\the\extracted_mimic_iii_data\is\stored"
 
 An additional notebook titled “MIMIC_III_DataRead” is available to provide a glimpse into some of the MIMIC-III database files.
